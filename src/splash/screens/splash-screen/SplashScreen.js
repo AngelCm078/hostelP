@@ -9,7 +9,7 @@ const SplashScreen = ({navigation}) => {
     const waitingtimesplash = () =>{
         setTimeout(() =>{
             //Alert.alert("Pasaron 3 Segundos");
-            navigation.navigate('Login');
+            navigation.navigate('ListApartments');
         }, 3000)
     }
     useEffect(() =>{

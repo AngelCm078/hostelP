@@ -10,12 +10,16 @@ const ListApartmentsScreen = ({navigation}) => {
     const goToRegister = () =>{
         navigation.navigate('Register');
     }
+    const goToUsers = () => {
+        navigation.navigate('ListUser')
+    }
     return (        
         <View>
             <StatusBar backgroundColor={Colors.primaryColor}></StatusBar>
             <Text>List Apartments Works</Text>
             <Button title="Go to Login" onPress={() => goToLogin()}></Button>
             <Button title="Go to Register" onPress={() => goToRegister()}></Button>
+            <Button title="Go to Users" onPress={() => goToUsers()}></Button>
         </View>
         );
 }
